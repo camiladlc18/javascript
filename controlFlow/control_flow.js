@@ -58,3 +58,25 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+////////////////////////////////////////////////////////
+
+let personRole = "Enrolled Member";
+let RoleStatus;
+
+switch(personRole){
+    case "Employee":
+        RoleStatus = "Dietary Services";
+        break;
+    case "Enrolled Member":
+        RoleStatus = "Dietary Services and one-on-one interaction with a dietician";
+        break;
+    case "Subscriber":
+        RoleStatus = "partial access to facilitate Dietary Services only";
+        break;
+    default:
+        RoleStatus = " subscribe first to avail this facility";
+        
+}
+
+console.log("RoleStatus:", RoleStatus);
